@@ -13,11 +13,13 @@ document.getElementById("login-btn").addEventListener("click", function() {
     // match pin and number
     if(contactNumer == "012234567890" && pin == "1234"){
         alert("login successfull");
-    }
+    } 
+    // else{
+    //  alert("login failed");
+    //  return;        
+    // }
 
-    // false login
-    else{
-        alert("login failed");
-        return;
-    }
+   
+
+    window.location.assign("/home.html");
 });
